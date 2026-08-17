@@ -10,20 +10,20 @@
 export const content = {
   // ---- Nombres -------------------------------------------------------
   names: {
-    recipient: "[NOMBRE DE ELLA]",
-    sender: "[TU NOMBRE]",
+    recipient: "[Mi niña linda]",
+    sender: "[Este loco enamorado]",
   },
 
   // ---- Fecha del cumplemes --------------------------------------------
   anniversary: {
     months: 8,
-    date: "[FECHA DE LOS 8 MESES]",
+    date: "[19/08/2026]",
   },
 
   // ---- Pantalla de introducción (sobre) --------------------------------
   intro: {
-    eyebrow: "para ti",
-    title: "[TEXTO DE INTRODUCCIÓN]",
+    eyebrow: "para mi niña linda",
+    title: "[Felices 8 meses mi vida]",
     instruction: "toca el sobre para abrirlo",
   },
 
@@ -35,7 +35,7 @@ export const content = {
   // ---- Sección Mensaje ----------------------------------------------------
   message: {
     heading: "Mensaje",
-    signatureLine: "[TU NOMBRE]",
+    signatureLine: "[este loco enamorado tuyo]",
     // Puedes usar varios párrafos: cada elemento del arreglo es un párrafo.
     paragraphs: [
       "[ESCRIBE AQUÍ EL MENSAJE PRINCIPAL PARA ELLA]",
