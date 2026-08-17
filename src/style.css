@@ -143,6 +143,7 @@ img {
   color: var(--gold-thread);
   margin: 0;
   z-index: 1;
+  transition: transform 0.7s var(--ease-soft), opacity 0.7s var(--ease-soft);
 }
 
 .intro-title {
@@ -155,6 +156,15 @@ img {
   margin: 0;
   line-height: 1.25;
   z-index: 1;
+  transition: transform 0.7s var(--ease-soft), opacity 0.7s var(--ease-soft);
+}
+
+.scene-intro.is-open .intro-eyebrow {
+  transform: translateY(-18px);
+  opacity: 0.7;
+}
+.scene-intro.is-open .intro-title {
+  transform: translateY(-26px);
 }
 
 .envelope-wrap {
@@ -1059,4 +1069,158 @@ img {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1) rotate(var(--rot));
   }
+}
+
+/* ==========================================================================
+   ESCENA CHISTE: FALSO PAYWALL
+   ========================================================================== */
+.scene-paywall {
+  background: radial-gradient(ellipse at 50% 0%, #2a1720 0%, #170c11 60%, #0d0708 100%);
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.paywall-card {
+  position: relative;
+  background: var(--paper);
+  width: min(92vw, 380px);
+  padding: clamp(1.8rem, 6vw, 2.4rem) clamp(1.6rem, 5vw, 2rem) 2rem;
+  border-radius: 18px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.9rem;
+  transition: transform 0.26s var(--ease-soft), opacity 0.26s var(--ease-soft);
+}
+.paywall-card.is-leaving {
+  transform: scale(0.94);
+  opacity: 0;
+}
+.paywall-card.is-entering {
+  animation: paywall-pop 0.4s var(--ease-soft);
+}
+@keyframes paywall-pop {
+  0% {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.paywall-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--burgundy);
+  background: rgba(110, 22, 38, 0.1);
+  padding: 0.3em 0.8em;
+  border-radius: 999px;
+  margin: 0;
+}
+
+.paywall-title {
+  font-family: var(--font-hand);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 5.5vw, 1.9rem);
+  color: var(--burgundy);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.paywall-subtitle {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.paywall-plans {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+  margin-top: 0.4rem;
+}
+
+.paywall-plan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  width: 100%;
+  padding: 0.8em 1em;
+  border-radius: 12px;
+  border: 1.5px solid var(--paper-shadow);
+  background: var(--cream-ink);
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+.paywall-plan:hover,
+.paywall-plan:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--burgundy);
+}
+
+.paywall-plan-label {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+.paywall-plan-price {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+.paywall-plan-badge {
+  position: absolute;
+  top: -9px;
+  right: 10px;
+  background: var(--burgundy);
+  color: var(--cream-ink);
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.25em 0.6em;
+  border-radius: 999px;
+}
+
+.paywall-decline {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  text-decoration: underline;
+  margin-top: 0.3rem;
+  padding: 0.3em;
+}
+
+.paywall-result-emoji {
+  font-size: 2.6rem;
+  margin: 0;
+  line-height: 1;
+}
+
+.paywall-continue {
+  margin-top: 0.6rem;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--cream-ink);
+  background: var(--burgundy);
+  padding: 0.7em 1.6em;
+  border-radius: 999px;
+  transition: transform 0.15s ease;
+}
+.paywall-continue:hover,
+.paywall-continue:focus-visible {
+  transform: translateY(-2px);
 }

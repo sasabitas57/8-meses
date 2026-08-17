@@ -38,12 +38,13 @@ export function renderIntro({ goTo }) {
     registerFirstInteraction();
     playSfx("openEnvelope"); // deshabilitado por config: no sonará
     envelopeBtn.classList.add("is-open");
+    section.classList.add("is-open");
     setEnvelopeOpened(true);
     envelopeBtn.setAttribute("aria-label", "Sobre abierto");
 
     window.setTimeout(() => {
       playFlowerBloom({
-        onCovered: () => goTo("menu"),
+        onCovered: () => goTo("paywall"),
       });
     }, 650);
   });

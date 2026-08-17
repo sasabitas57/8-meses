@@ -1,5 +1,6 @@
 import { state, setScene } from "./state.js";
 import { renderIntro } from "../scenes/intro.js";
+import { renderPaywall } from "../scenes/paywall.js";
 import { renderMenu } from "../scenes/menu.js";
 import { renderMessage } from "../scenes/message.js";
 import { renderMemories } from "../scenes/memories.js";
@@ -7,6 +8,7 @@ import { renderGift } from "../scenes/gift.js";
 
 const sceneRenderers = {
   intro: renderIntro,
+  paywall: renderPaywall,
   menu: renderMenu,
   message: renderMessage,
   memories: renderMemories,
