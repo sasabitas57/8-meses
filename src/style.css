@@ -15,6 +15,7 @@
   --gold-thread: #c79a5c;
   --cream-ink: #f6ecda;
   --rose: #b34a63;
+  --carnation-deep: #832a49;
 
   --font-hand: "Caveat", cursive;
   --font-serif: "EB Garamond", serif;
@@ -1033,7 +1034,7 @@ img {
 }
 
 .flower-bloom.is-blooming .flower {
-  animation: flower-pop 0.68s var(--ease-soft) forwards;
+  animation: flower-pop 0.56s var(--ease-soft) forwards;
   animation-delay: var(--delay);
 }
 
