@@ -35,10 +35,10 @@ export const content = {
   // ---- Sección Mensaje ----------------------------------------------------
   message: {
     heading: "Cartica pa vos",
-    signatureLine: "[este loco enamorado tuyo]",
+    signatureLine: "este loco enamorado tuyo",
     // Puedes usar varios párrafos: cada elemento del arreglo es un párrafo.
     paragraphs: [
-      "[Gracias por tanto que me has dado en estos hermosos meses]",
+      "Gracias por tanto que me has dado en estos hermosos meses",
       "[SI QUIERES, AGREGA UN SEGUNDO PÁRRAFO AQUÍ]",
     ],
   },
