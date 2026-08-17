@@ -38,8 +38,9 @@ export const content = {
     signatureLine: "este loco enamorado tuyo",
     // Puedes usar varios párrafos: cada elemento del arreglo es un párrafo.
     paragraphs: [
-      "Gracias por tanto que me has dado en estos hermosos meses",
-      "[SI QUIERES, AGREGA UN SEGUNDO PÁRRAFO AQUÍ]",
+      "Gracias por tanto que me has dado en este tiempo; no podría imaginar mejores 8 meses en mi vida que los que acabamos de vivir juntos cada día que pasa, ante todo en esta vida, ratifico más mi sentir de querer pasar mi vida junto a ti, de ser tu admirador numero uno, ser tu apoyo, tu confidente, tu fiel amante y compañero de vida. Amo todo lo que hemos vivido, absolutamente todo y estoy profundamente feliz de haberte conocido, de haberte hablado y sobre todo de mandarte ese reel.
+",
+      "Eres mi pensamiento cada mañana al despertar y cada noche al irme a dormir, así como ocupas aproximadamente un 50% del espacio de mi corazón (el otro 50 es pa mis hobbies, amigos, etc, avariciosa, ehhh). Te amo con toda mi alma, con cada célula de mi cuerpo, con cada pensamiento que genera mi mente. Te amo y te amo y te amo mi reina.",
     ],
   },
 
