@@ -1,10 +1,11 @@
 import { content } from "../data/content.js";
 import { state } from "../app/state.js";
+import { assetUrl } from "../utils/paths.js";
 
 // ----------------------------------------------------------------------
 // Música de fondo
 // ----------------------------------------------------------------------
-const bgMusic = new Audio(content.music.file);
+const bgMusic = new Audio(assetUrl(content.music.file));
 bgMusic.loop = true;
 bgMusic.volume = 0.55;
 bgMusic.addEventListener("error", () => {
@@ -83,7 +84,7 @@ export function playSfx(name) {
 
   let audio = sfxCache.get(name);
   if (!audio) {
-    audio = new Audio(file);
+    audio = new Audio(assetUrl(file));
     audio.volume = 0.5;
     sfxCache.set(name, audio);
   }
