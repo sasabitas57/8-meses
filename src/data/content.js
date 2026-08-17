@@ -50,8 +50,8 @@ export const content = {
     heading: "Recuerdos",
     instruction: "toca una foto para verla más grande",
     items: [
-      { id: "m01", image: "/assets/images/photos/photo-01.jpeg", date: "[FECHA]", caption: "[FRASE DEL RECUERDO 01]" },
-      { id: "m02", image: "/assets/images/photos/photo-02.jpeg", date: "[FECHA]", caption: "[FRASE DEL RECUERDO 02]" },
+      { id: "m01", image: "/assets/images/photos/photo-01.jpg", date: "[FECHA]", caption: "[FRASE DEL RECUERDO 01]" },
+      { id: "m02", image: "/assets/images/photos/photo-02.jpg", date: "[FECHA]", caption: "[FRASE DEL RECUERDO 02]" },
       { id: "m03", image: "/assets/images/photos/photo-03.jpg", date: "[FECHA]", caption: "[FRASE DEL RECUERDO 03]" },
       { id: "m04", image: "/assets/images/photos/photo-04.jpg", date: "[FECHA]", caption: "[FRASE DEL RECUERDO 04]" },
       { id: "m05", image: "/assets/images/photos/photo-05.jpg", date: "[FECHA]", caption: "[FRASE DEL RECUERDO 05]" },
