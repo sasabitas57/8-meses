@@ -42,7 +42,7 @@ export function renderIntro({ goTo }) {
     envelopeBtn.setAttribute("aria-label", "Sobre abierto");
 
     window.setTimeout(() => {
-      playFlowerBloom(section, {
+      playFlowerBloom({
         onCovered: () => goTo("menu"),
       });
     }, 650);
