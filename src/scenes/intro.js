@@ -1,6 +1,7 @@
 import { content } from "../data/content.js";
 import { state, setEnvelopeOpened } from "../app/state.js";
 import { playSfx, registerFirstInteraction } from "../components/audio.js";
+import { playFlowerBloom } from "../components/flowerBloom.js";
 
 export function renderIntro({ goTo }) {
   const section = document.createElement("section");
@@ -41,8 +42,10 @@ export function renderIntro({ goTo }) {
     envelopeBtn.setAttribute("aria-label", "Sobre abierto");
 
     window.setTimeout(() => {
-      goTo("menu");
-    }, 1400);
+      playFlowerBloom(section, {
+        onCovered: () => goTo("menu"),
+      });
+    }, 650);
   });
 
   return section;
