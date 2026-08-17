@@ -70,17 +70,17 @@ export const content = {
 
   // ---- Sección Regalo -------------------------------------------------------
   gift: {
-    heading: "Regalo",
-    note: "[FRASE CORTA SOBRE LA CANCIÓN / PLAYLIST]",
+    heading: "Un regalito chikito",
+    note: "Una bobadita, muestra de nuestro amor lleno de melodía",
     spotify: {
       // Coloca la imagen del Spotify Code en /public/assets/spotify/
       // y reemplaza el nombre de archivo abajo. Déjalo tal cual mientras
       // no tengas el código todavía: se mostrará un placeholder visual.
       image: "/assets/spotify/spotify-code.png",
-      playlistName: "[NOMBRE DE LA PLAYLIST]",
+      playlistName: "Te amo 3000",
       // Si además quieres que el código sea clicable hacia Spotify,
       // pega aquí el enlace. Si lo dejas vacío, no será clicable.
-      url: "",
+      url: "https://open.spotify.com/playlist/3QXo3RU3LYIFykq7yflQZm?si=DeD1JDdHR6izwQikvIU9cA&utm_source=copy-link&pi=34sqIX3KQ6awv",
     },
   },
 
