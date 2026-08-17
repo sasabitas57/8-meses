@@ -23,13 +23,13 @@ export const content = {
   // ---- Pantalla de introducción (sobre) --------------------------------
   intro: {
     eyebrow: "para mi niña linda",
-    title: "[Felices 8 meses mi vida]",
-    instruction: "toca el sobre para abrirlo",
+    title: "Felices 8 meses mi vida",
+    instruction: "toca el sobrecito",
   },
 
   // ---- Menú principal ---------------------------------------------------
   menu: {
-    instruction: "toca un objeto para explorarlo",
+    instruction: "adelante mi cielito, abrelos",
   },
 
   // ---- Sección Mensaje ----------------------------------------------------
